@@ -117,7 +117,7 @@ export default {
   },
   computed: {
     ...mapGetters(["getMsg"]),
-    ...mapState(["msg"]),
+    ...mapState(["msg", "user"]),
   },
   components: {},
   created() {

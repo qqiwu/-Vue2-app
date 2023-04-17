@@ -22,6 +22,12 @@ const store = new VueX.Store({
       show: false,
     },
     cookie: "",
+    user: {
+      // uid: localStorage.getItem("uid") || "",
+      cookie: localStorage.getItem("cookie") || "",
+      profile: localStorage.getItem("profile") || "",
+      account: localStorage.getItem("account") || "",
+    },
     account: {},
   },
   actions: {

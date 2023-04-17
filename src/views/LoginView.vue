@@ -23,7 +23,7 @@
 
 <script>
 import { getQrKey, getQr, checkQr, getStatus } from "@/api";
-import { mapActions, mapMutations } from "vuex";
+import { mapActions, mapMutations, mapState } from "vuex";
 
 export default {
   name: "login-view",
@@ -33,7 +33,9 @@ export default {
       qrimg: "",
     };
   },
-  computed: {},
+  computed: {
+    ...mapState(["user"]),
+  },
   components: {},
   created() {},
   mounted() {},
